@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.1//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.5.1/distro-source/core/src/gwt-module.dtd">
+
+<module rename-to='painoindeksi'>
+	<!-- Perus GTW-sälä -->
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<!-- END sälä -->
+
+	<entry-point class="com.irrotation.painoindeksi.client.Painoindeksi" />
+
+	<source path='client' />
+	<source path='shared' />
+
+	<servlet path="/laske"
+		class="com.irrotation.painoindeksi.server.PainoindeksiServiceImpl" />
+</module>

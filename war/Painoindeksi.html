@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link type="text/css" rel="stylesheet" href="./css/Painoindeksi.css">
+  <title>Painoindeksilaskuri</title>
+</head>
+<body class="black">
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+
+<main class="container">
+	<header class="jumbotron">
+	 <div class="container">
+	   <h1>Painoindeksilaskuri</h1>
+	 </div>
+	</header>
+	
+	<section class="container element">
+	 <div class="form-group">
+	   <label for="painoInp">Paino</label>
+	   <input type="text" class="form-control" id="painoInp" />
+	   <label for="pituusInp">Pituus</label>
+	   <input type="text" class="form-control" id="pituusInp" />
+	   <label for="ikaInp">Ikä</label>
+	   <input type="text" class="form-control" id="ikaInp" />
+   </div>
+   <button type="button" id="laske_indeksi" class="btn btn-default">Laske indeksi!</button> 
+	</section>
+	
+	<aside class="container element">
+	 <div class="row">
+	   <div class="col-xs-12">Käyttäjien keski-ikä on <strong><span id="k-ika"></span></strong> vuotta.</div>
+	 </div>
+	 <div class="row">
+	   <div class="col-xs-12">Käyttäjien keskipituus on <strong><span class="bold" id="k-pituus"></span></strong> metriä.</div>
+	 </div>
+   <div class="row">
+     <div class="col-xs-12">Käyttäjien keskipaino on <strong><span class="bold" id="k-paino"></span></strong> kiloa.</div>
+   </div>
+	 <div class="row">
+	   <div class="col-xs-12">Käyttäjien keskimääräinen painoindeksi on <strong><span class="bold" id="k-idx"></span></strong>.</div>
+	 </div>
+	</aside>
+	
+	<section class="container element">
+		<div class="row inner-hdr">
+		  <div class="col-md-offset-4 col-xs-4"><span class="h3">Hae tietyllä ikävälillä</span></div>
+		</div>
+    <div class="row form-inline">
+      <div class="col-md-offset-3 col-xs-2">
+        <div class="form-group">
+          <label class="sr-only" for="a-ika">Ikä alkaen</label>
+          <input type="text" class="form-control" id="a-ika" placeHolder="Pienin ikä" />
+        </div>
+      </div>
+      <div class="col-xs-2">
+        <label class="sr-only" for="l-ika">Ikä loppuen</label>
+        <div class="form-group"><input type="text" class="form-control" id="l-ika" placeHolder="Suurin ikä" /></div>
+      </div>
+      <div class="col-xs-2">
+        <button type="button" class="btn btn-default" id="b-ika">Hae</button>
+      </div>
+    </div>
+	</section>
+</main>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="painoindeksi/painoindeksi.nocache.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html> 

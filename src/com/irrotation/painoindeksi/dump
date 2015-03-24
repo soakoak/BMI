@@ -1,0 +1,94 @@
+      // GWT.log( event.getRelativeElement().getId() );
+
+//      if (event.getRelativeElement().getId()
+//          .equals(pituus.getElement().getId())) {
+//        pituus.setText("");
+//      } else if (event.getRelativeElement().getId()
+//          .equals(paino.getElement().getId())) {
+//        paino.setText("");
+//      } else if (event.getRelativeElement().getId()
+//          .equals(ika.getElement().getId())) {
+//        ika.setText("");
+//      }
+
+//    final Button calc = Button.wrap(DOM.getElementById("laske_indeksi"));
+//    final TextBox pituus = TextBox.wrap(DOM.getElementById("pituusInp"));
+//    final TextBox paino = TextBox.wrap(DOM.getElementById("painoInp"));
+//    final TextBox ika = TextBox.wrap(DOM.getElementById("ikaInp"));
+//
+//    pituus.setText("m");
+//    paino.setText("kg");
+//    ika.setText("vuotta");
+
+//    pituus.addClickHandler(txtVanisher);
+//    paino.addClickHandler(txtVanisher);
+//    ika.addClickHandler(txtVanisher);
+
+//    calc.addClickHandler(new ClickHandler() {
+//
+//      @Override
+//      public void onClick(ClickEvent event) {
+//        String sPituus = pituus.getText();
+//        String sPaino = paino.getText();
+//        String sIka = ika.getText();
+//
+////        GWT.log("Pituus = " + sPituus + " metriä");
+////        GWT.log("Paino = " + sPaino + " kiloa");
+////        GWT.log("Ikä = " + sIka + " vuotta");
+//
+//        double pituus = 0, paino = 0;
+//        int ika = 0;
+//        try {
+//          pituus = Double.parseDouble(sPituus.replace(",", "."));
+//          paino = Double.parseDouble(sPaino.replace(",", "."));
+//          ika = Integer.parseInt(sIka);
+//
+//          String lbltxt = "Lähetetään palvelimelle seuraavat arvot: Pituus "
+//              + sPituus + " metriä, paino " + sPaino + " kiloa, ikä " + sIka + " vuotta.";
+//          textToServerLabel.setText(lbltxt);
+//        } catch (NumberFormatException e) {
+//          GWT.log("virhe parsiessa pituutta, painoa, tai ikää");
+//          textToServerLabel
+//              .setText("Virheellinen paino ja/tai pituus ja/tai ikä");
+//          dialogBox.center();
+//        }
+//
+//        if (pituus > 0 & paino > 0 & ika > 0) {
+//          //Joko
+////          String indeksi = Laskuri.laskePainoindeksi(pituus, paino)
+////              + "";
+////          indeksiSvc.kerroIndeksi(indeksi,
+////              new AsyncCallback<String>() {
+//          //Tai
+//          indeksiSvc.kerroIndeksi(paino, pituus, ika,
+//                      new AsyncCallback<String>() {
+//          //END_OR
+//            public void onFailure(Throwable caught) {
+//              // Show the RPC error message to the user
+//              dialogBox
+//                  .setText("Remote Procedure Call - Failure");
+//              serverResponseLabel
+//                  .addStyleName("serverResponseLabelError");
+//              serverResponseLabel
+//                  .setHTML("Virhe laskiessa indeksiä, yritä myöhemmin uudestaan.");
+//              dialogBox.center();
+//              closeButton.setFocus(true);
+//            }
+//
+//            public void onSuccess(String result) {
+//              dialogBox.setText("Remote Procedure Call");
+//              serverResponseLabel
+//                  .removeStyleName("serverResponseLabelError");
+//              serverResponseLabel.setHTML(result);
+//              dialogBox.center();
+//              closeButton.setFocus(true);
+//            }
+//          });
+//        } else {
+//          GWT.log("Negatiivisia arvoja");
+//          textToServerLabel
+//              .setText("Virheellinen paino ja/tai pituus ja/tai ikä");
+//          dialogBox.center();
+//        }
+//      }
+//    });
